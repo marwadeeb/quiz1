@@ -178,4 +178,6 @@ Suppose the following scenario: in the working directory, everything in up-to-da
 ``git commit -m "added code.py" -a``
 
 Is this correct? Explain why.
-yes, this commit will add the file to the staging area, then directly commits it with a message.
+No, this is not correct, the new file is not tracked yet.
+The following output will be shown ``nothing added to commit but untracked files present (use "git add" to track)``, only modified files can be added this way.
+
