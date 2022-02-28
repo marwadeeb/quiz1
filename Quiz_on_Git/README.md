@@ -11,7 +11,7 @@ After you initialize a new Git repository and create a file named ``my_file.txt`
 
 - [ ] git status
 - [ ] git add .
-- [ ] git commit -m "my_file.txt is added"
+- [x] git commit -m "my_file.txt is added"
 - [ ] git add my_file.txt
 
 Question 2
@@ -28,7 +28,7 @@ Say you have three changed files (``README.md``, ``my_code.py`` and ``my_page.ht
     1. git add my_page.html
     2. git commit -m "my commit message"
 
-- [ ] execute the following commands:
+- [x] execute the following commands:
 
     1. git add my_page.html
     2. git commit -m "added the file my_page.html"
@@ -40,7 +40,7 @@ Which command should you use to initialize a new Git repository?
 
 - [ ] git bash
 - [ ] git install
-- [ ] git init
+- [x] git init
 - [ ] git start
 
 Question 4
@@ -49,7 +49,7 @@ Question 4
 Which file can you configure to ensure that certain file types are never committed to the local Git repository?
 
 - [ ] ignore.git
-- [ ] .gitignore
+- [x] .gitignore
 - [ ] gitignore.txt
 - [ ] git.ignore
 
@@ -60,7 +60,7 @@ When you run the command ``git branch debugging``, the following will happen:
 
 - [ ] The ``HEAD`` will point to the newly created branch named ``debugging``
 - [ ] Create a new branch named ``debugging`` and you'll see the message: ``Switched to branch 'debugging'``
-- [ ] Create a new branch named ``debugging`` and ``HEAD`` will stay pointing at ``master``   
+- [x] Create a new branch named ``debugging`` and ``HEAD`` will stay pointing at ``master``   
 - [ ] None of the above
 
 
