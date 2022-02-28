@@ -72,7 +72,7 @@ Consider you start with an **empty** directory and you initialize a git reposito
 
 The commits C<sub>1</sub>, C<sub>2</sub>, ... are numbered in sequence, which means that the commit C<sub>1</sub> came before the commit C<sub>2</sub> and the commit C<sub>3</sub> before C<sub>4</sub>. The commands that were performed to get the to this **exact history** are the following:
 
-- [ ] After ``git init`` and the first commit C<sub>1</sub>:
+- [x] After ``git init`` and the first commit C<sub>1</sub>:
 
       1. git checkout -b debugging
       2. modify  and commit
@@ -131,6 +131,7 @@ You have three files in your working directory: `.gitignore`, `A.txt`, `B.txt` a
 3. git push --set-upstream origin master
 
 Do you think that all the files will be pushed to the remote? Explain why.
+No, since the file `.gitgnore` contains `*.txt`, all the text files will be ignored when moving files to the staging area (ie. when runniing ``git add *``).
 
 Question 8
 ----------
@@ -146,6 +147,7 @@ a---b---c---d  branch 'master' (refers to commit 'd')
 
 Where will the HEAD point if we run the following command:
 ``git checkout v2.0``
+HEAD will now be pointing to the commit 'b', and it would be in detached state.
 
 Question 9:
 ----------
@@ -161,6 +163,12 @@ Explain what will happen when we run the following commands:
 4. git merge experiment
 
 You need to specify where ``HEAD``, ``master`` and ``experiment`` will be after these commands, and you need to sketch theupdated history. You may add a graph as an answer in a folder named as follows: ``firstName_LastName_graphics``.
+After these commands, the updated history will be as follows:
+C0 <-- C1 <-- C2 <-- C3 <-- C5 <-- C4
+                                    |
+                                  HEAD (refers to commit 'C4)
+                                  tag 'experiment' (refers to commit 'C4')
+                                  'master' branch
 
 Question 10:
 -----------
@@ -170,4 +178,4 @@ Suppose the following scenario: in the working directory, everything in up-to-da
 ``git commit -m "added code.py" -a``
 
 Is this correct? Explain why.
-
+yes, this commit will add the file to the staging area, then directly commits it with a message.
